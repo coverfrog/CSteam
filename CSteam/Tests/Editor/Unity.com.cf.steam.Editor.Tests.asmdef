@@ -1,0 +1,19 @@
+{
+  "name": "com.cf.steam.Editor.Tests",
+  "rootNamespace": "Cf.CSteam.Editor.Tests",
+  "references": [
+    "com.cf.steam",
+    "com.cf.steam.Tests"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

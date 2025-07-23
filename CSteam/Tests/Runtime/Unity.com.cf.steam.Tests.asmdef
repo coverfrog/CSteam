@@ -1,0 +1,16 @@
+{
+  "name": "com.cf.steam.Tests",
+  "rootNamespace": "Cf.CSteam.Tests",
+  "references": [
+    "com.cf.steam"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
