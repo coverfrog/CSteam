@@ -5,7 +5,9 @@
   "description": "com.cf.steam",
   "unity": null,
   "unityRelease": null,
-  "dependencies": {},
+  "dependencies": {
+    "com.unity.netcode.gameobjects": "2.4.4"
+  },
   "keywords": [],
   "author": {
     "name": null,
