@@ -16,16 +16,13 @@ namespace Cf.CSteam
         [SerializeField] private string netPrefabPath = "NetworkManager";
         [SerializeField] private float netSingletonTimeOut = 0.1f;
         
+        
+        
         private static NetworkManager Net { get; set; }
 
         private static FacepunchTransport Transport { get; set; }
 
         private static Lobby CurrentLobby { get; set; }
-
-        private void Awake()
-        {
-            DontDestroyOnLoad(gameObject);
-        }
 
         private IEnumerator Start()
         {
