@@ -165,6 +165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
+  netPrefabPath: NetworkManager
+  netSingletonTimeOut: 0.1
 --- !u!114 &155688646
 MonoBehaviour:
   m_ObjectHideFlags: 0
