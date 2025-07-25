@@ -16,8 +16,8 @@ namespace Cf.CSteam
         [SerializeField] private string netPrefabPath = "NetworkManager";
         [SerializeField] private float netSingletonTimeOut = 0.1f;
         
-        
-        
+		public static bool IsLoaded { get; private set; }
+
         private static NetworkManager Net { get; set; }
 
         private static FacepunchTransport Transport { get; set; }
@@ -61,6 +61,7 @@ namespace Cf.CSteam
 
             if (NetworkManager.Singleton)
             {
+				IsLoaded = true;
                 yield break;
             }
 
@@ -78,6 +79,7 @@ namespace Cf.CSteam
             
             Net = obj.GetComponent<NetworkManager>();
             Transport = obj.GetComponent<FacepunchTransport>();
+			IsLoaded = true;
         }
     }
 }
