@@ -4,7 +4,7 @@ namespace Cf.CSteam
 {
     public partial class SteamManager
     {
-        private static void UnSubSteam()
+        private void UnSubSteam()
         {
             SteamMatchmaking.OnLobbyCreated -= LobbyCreated;
             SteamMatchmaking.OnLobbyEntered -= LobbyEntered;
@@ -15,7 +15,7 @@ namespace Cf.CSteam
             SteamFriends.OnGameLobbyJoinRequested -= GameLobbyJoinRequested;
         }
         
-        private static void UnSubScene()
+        private void UnSubScene()
         {
             Net.SceneManager.OnLoadEventCompleted -= SceneLoadEventCompleted;
         }

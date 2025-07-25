@@ -13,10 +13,17 @@ namespace Cf.CSteam
     {
         private static async void GameLobbyJoinRequested(Lobby lobby, SteamId steamId)
         {
-            await lobby.Join();
+            try
+            {
+                await lobby.Join();
+            }
+            catch (Exception)
+            {
+                // ignore
+            }
         }
 
-        private static void LobbyEntered(Lobby lobby)
+        private void LobbyEntered(Lobby lobby)
         {
             CurrentLobby = lobby;
 
@@ -29,7 +36,7 @@ namespace Cf.CSteam
             Net.StartClient();
         }
 
-        private static void LobbyCreated(Result result, Lobby lobby)
+        private void LobbyCreated(Result result, Lobby lobby)
         {
             if (result != Result.OK)
             {
